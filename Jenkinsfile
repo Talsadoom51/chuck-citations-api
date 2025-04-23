@@ -16,8 +16,8 @@ pipeline {
     stage('Build Docker image') {
       steps {
         sh '''
-        docker build -t mon-registry/chuck-api:latest .
-        docker push mon-registry/chuck-api:latest
+        docker build -t 192.168.56.151:5000/chuck-api:latest .
+        docker push 192.168.56.151:5000/chuck-api:latest
         '''
       }
     }
