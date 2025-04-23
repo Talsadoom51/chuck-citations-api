@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/Talsadoom51/chuck_citations-api.git', branch: 'main'
+        git url: 'https://github.com/Talsadoom51/chuck-citations-api.git', branch: 'main'
         sh 'ls -la'
       }
     }
