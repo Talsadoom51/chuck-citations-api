@@ -26,7 +26,7 @@ pipeline {
       when { expression { return params.DEPLOY } }
       steps {
         sh '''
-        ssh vagrant@prod "docker pull mon-registry/chuck-api:latest && docker restart chuck_api"
+        ssh vagrant@192.168.56.152 "docker pull mon-registry/chuck-api:latest && docker restart chuck_api"
         '''
       }
     }
